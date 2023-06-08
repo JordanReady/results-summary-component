@@ -81,18 +81,18 @@
 }
 
 .summary-title {
-  color: #5b5b61;
+  color: #3e3e43;
   font-size: 20px;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  padding-left: 35px;
+  padding-top: 24px;
+  padding-bottom: 4px;
+  padding-left: 32px;
   align-self: flex-start;
 }
 
 .skill-container {
   display: flex;
-  width: 235px;
-  height: 43px;
+  width: 233px;
+  height: 45px;
   align-items: center;
   justify-content: space-between;
   border-radius: 10px;
@@ -130,6 +130,7 @@
 
 .skill-type {
   display: flex;
+  padding-left: 2px;
 }
 
 .skill-icon {
@@ -138,22 +139,26 @@
 }
 
 .skill-title {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: bold;
 }
 
 .skill-score {
   padding: 10px;
+  padding-right: 13px;
 }
 
 .your-score {
-  color: #5b5b61;
+  color: #3d3d41;
   font-weight: bold;
+  font-size: 15px;
+  padding-right: 2px;
 }
 
 .total-score {
   color: #9b999e;
   font-weight: bold;
+  font-size: 15px;
 }
 
 .continue-button {
@@ -179,23 +184,23 @@
 }
 
 .skill-container.reaction .top-left-corner-accent {
-  border-top: 1px solid rgba(255, 0, 0, 0.144);
-  border-left: 1px solid rgba(255, 0, 0, 0.144);
+  border-top: 1px solid rgba(255, 0, 0, 0.062);
+  border-left: 1px solid rgba(255, 0, 0, 0.062);
 }
 
 .skill-container.reaction .top-right-corner-accent {
-  border-top: 1px solid rgba(255, 0, 0, 0.144);
-  border-right: 1px solid rgba(255, 0, 0, 0.144);
+  border-top: 1px solid rgba(255, 0, 0, 0.062);
+  border-right: 1px solid rgba(255, 0, 0, 0.062);
 }
 
 .skill-container.reaction .bottom-left-corner-accent {
-  border-bottom: 1px solid rgba(255, 0, 0, 0.144);
-  border-left: 1px solid rgba(255, 0, 0, 0.144);
+  border-bottom: 1px solid rgba(255, 0, 0, 0.062);
+  border-left: 1px solid rgba(255, 0, 0, 0.062);
 }
 
 .skill-container.reaction .bottom-right-corner-accent {
-  border-bottom: 1px solid rgba(255, 0, 0, 0.144);
-  border-right: 1px solid rgba(255, 0, 0, 0.144);
+  border-bottom: 1px solid rgba(255, 0, 0, 0.062);
+  border-right: 1px solid rgba(255, 0, 0, 0.062);
 }
 
 .skill-container.reaction .skill-title {
