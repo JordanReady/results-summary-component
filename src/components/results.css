@@ -1,7 +1,7 @@
 .results-container {
   width: 600px;
   height: 420px;
-  background-color: aliceblue;
+  background-color: rgb(248, 250, 252);
   border-radius: 30px;
   display: flex;
 }
@@ -83,13 +83,13 @@
 .skill-container {
   display: flex;
   width: 235px;
-  height: 42px;
+  height: 43px;
   align-items: center;
   justify-content: space-between;
   border-radius: 10px;
   position: relative;
   z-index: 2 !important;
-  margin: 8px;
+  margin: 7px;
 }
 
 .corner-accent {
@@ -145,6 +145,22 @@
 .total-score {
   color: #9b999e;
   font-weight: bold;
+}
+
+.continue-button {
+  margin-top: 23px;
+  padding: 12px;
+  width: 235px;
+  border-radius: 25px;
+  background-color: #313b58;
+}
+
+.continue-button:hover {
+  background-image: linear-gradient(
+    to bottom,
+    var(--primary-light),
+    var(--primary-dark)
+  );
 }
 
 /* Colors of the skill-containers */

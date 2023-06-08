@@ -90,6 +90,7 @@ function Results() {
             <span className="total-score"> / 100</span>
           </div>
         </div>
+        <button className="continue-button">Continue</button>
       </div>
     </div>
   );
