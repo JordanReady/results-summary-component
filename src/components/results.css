@@ -21,9 +21,10 @@
 }
 
 .result-title {
-  font-size: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  font-size: 19px;
+  padding-top: 26px;
+  padding-bottom: 16px;
+  color: #efeff7af;
 }
 
 .circle-score-container {
@@ -38,13 +39,17 @@
 }
 
 .circle-score {
-  font-size: 50px;
+  font-size: 58px;
   font-weight: bolder;
+  color: white;
+  margin-top: -4px;
 }
 
 .circle-score-text {
   margin: 0;
-  color: #c4c4fe;
+  color: #c4c4fe88;
+  margin-top: -12px;
+  font-size: 14px;
 }
 
 .result-rating-container {
@@ -52,13 +57,17 @@
 }
 
 .result-rating {
-  margin-top: 10px;
+  font-size: 26px;
+  margin-top: 14px;
   margin-bottom: 0;
+  color: white;
 }
 
 .result-description {
+  font-size: 14px;
+  letter-spacing: 0.025rem;
   margin-top: 0;
-  padding: 10px 25px;
+  padding: 9px 35px;
   line-height: 1.2rem;
   color: #c4c4fe;
 }
