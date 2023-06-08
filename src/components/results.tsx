@@ -2,7 +2,7 @@ import "./results.css";
 
 function Results() {
   return (
-    <div className="results-container">
+    <div className="results-summary-container">
       <div className="result-container">
         <h1 className="result-title">Your Result</h1>
         <div className="circle-score-container">

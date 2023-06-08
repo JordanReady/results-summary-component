@@ -1,4 +1,4 @@
-.results-container {
+.results-summary-container {
   width: 600px;
   height: 420px;
   background-color: rgb(248, 250, 252);
@@ -292,4 +292,53 @@
 
 .skill-container.visual .skill-title {
   color: #2123d3;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .results-summary-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+    width: 100dvw;
+    border-radius: 0;
+  }
+
+  .result-container {
+    width: 100%;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+
+  .circle-score-container {
+    height: 20dvh;
+    width: 20dvh;
+  }
+
+  .result-rating-container {
+    padding-bottom: 0;
+  }
+
+  .result-description {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .summary-container {
+    width: 100%;
+  }
+
+  .summary-title {
+    font-size: 1rem;
+  }
+
+  .skill-container {
+    width: 85dvw;
+  }
+
+  .continue-button {
+    width: 85dvw;
+  }
 }
