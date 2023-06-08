@@ -83,12 +83,13 @@
 .skill-container {
   display: flex;
   width: 235px;
-  height: 45px;
+  height: 42px;
   align-items: center;
   justify-content: space-between;
   border-radius: 10px;
   position: relative;
   z-index: 2 !important;
+  margin: 8px;
 }
 
 .corner-accent {
@@ -124,6 +125,12 @@
 
 .skill-icon {
   padding: 10px;
+  width: 16px;
+}
+
+.skill-title {
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .skill-score {
@@ -143,7 +150,7 @@
 /* Colors of the skill-containers */
 /* Reaction */
 .skill-container.reaction {
-  background-color: #f5ecea;
+  background-color: #f5eceab4;
 }
 
 .skill-container.reaction .top-left-corner-accent {
@@ -168,4 +175,91 @@
 
 .skill-container.reaction .skill-title {
   color: #f85354;
+}
+
+/* Memory */
+.skill-container.memory {
+  background-color: #fffbf2;
+}
+
+.skill-container.memory .top-left-corner-accent {
+  border-top: 1px solid rgba(251, 255, 0, 0.692);
+  border-left: 1px solid rgba(251, 255, 0, 0.692);
+}
+
+.skill-container.memory .top-right-corner-accent {
+  border-top: 1px solid rgba(251, 255, 0, 0.692);
+  border-right: 1px solid rgba(251, 255, 0, 0.692);
+}
+
+.skill-container.memory .bottom-left-corner-accent {
+  border-bottom: 1px solid rgba(251, 255, 0, 0.692);
+  border-left: 1px solid rgba(251, 255, 0, 0.692);
+}
+
+.skill-container.memory .bottom-right-corner-accent {
+  border-bottom: 1px solid rgba(251, 255, 0, 0.692);
+  border-right: 1px solid rgba(251, 255, 0, 0.692);
+}
+
+.skill-container.memory .skill-title {
+  color: #fab22a;
+}
+
+/* Verbal */
+.skill-container.verbal {
+  background-color: #c6f3dc5e;
+}
+
+.skill-container.verbal .top-left-corner-accent {
+  border-top: 1px solid rgba(0, 255, 21, 0.342);
+  border-left: 1px solid rgba(0, 255, 21, 0.342);
+}
+
+.skill-container.verbal .top-right-corner-accent {
+  border-top: 1px solid rgba(0, 255, 21, 0.342);
+  border-right: 1px solid rgba(0, 255, 21, 0.342);
+}
+
+.skill-container.verbal .bottom-left-corner-accent {
+  border-bottom: 1px solid rgba(0, 255, 21, 0.342);
+  border-left: 1px solid rgba(0, 255, 21, 0.342);
+}
+
+.skill-container.verbal .bottom-right-corner-accent {
+  border-bottom: 1px solid rgba(0, 255, 21, 0.342);
+  border-right: 1px solid rgba(0, 255, 21, 0.342);
+}
+
+.skill-container.verbal .skill-title {
+  color: #2fbb91;
+}
+
+/* Visual */
+.skill-container.visual {
+  background-color: #eaeafa;
+}
+
+.skill-container.visual .top-left-corner-accent {
+  border-top: 1px solid rgba(0, 26, 255, 0.144);
+  border-left: 1px solid rgba(0, 26, 255, 0.144);
+}
+
+.skill-container.visual .top-right-corner-accent {
+  border-top: 1px solid rgba(0, 26, 255, 0.144);
+  border-right: 1px solid rgba(0, 26, 255, 0.144);
+}
+
+.skill-container.visual .bottom-left-corner-accent {
+  border-bottom: 1px solid rgba(0, 26, 255, 0.144);
+  border-left: 1px solid rgba(0, 26, 255, 0.144);
+}
+
+.skill-container.visual .bottom-right-corner-accent {
+  border-bottom: 1px solid rgba(0, 26, 255, 0.144);
+  border-right: 1px solid rgba(0, 26, 255, 0.144);
+}
+
+.skill-container.visual .skill-title {
+  color: #2123d3;
 }

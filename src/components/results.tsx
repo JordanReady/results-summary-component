@@ -36,6 +36,60 @@ function Results() {
             <span className="total-score"> / 100</span>
           </div>
         </div>
+        <div className="skill-container memory">
+          <span className="top-left-corner-accent corner-accent"></span>
+          <span className="top-right-corner-accent corner-accent"></span>
+          <span className="bottom-left-corner-accent corner-accent"></span>
+          <span className="bottom-right-corner-accent corner-accent"></span>
+          <div className="skill-type">
+            <img
+              src="src\assets\icon-memory.svg"
+              alt="memory icon"
+              className="skill-icon"
+            />
+            <p className="skill-title">Memory</p>
+          </div>
+          <div className="skill-score">
+            <span className="your-score">92</span>
+            <span className="total-score"> / 100</span>
+          </div>
+        </div>
+        <div className="skill-container verbal">
+          <span className="top-left-corner-accent corner-accent"></span>
+          <span className="top-right-corner-accent corner-accent"></span>
+          <span className="bottom-left-corner-accent corner-accent"></span>
+          <span className="bottom-right-corner-accent corner-accent"></span>
+          <div className="skill-type">
+            <img
+              src="src\assets\icon-verbal.svg"
+              alt="verbal icon"
+              className="skill-icon"
+            />
+            <p className="skill-title">Verbal</p>
+          </div>
+          <div className="skill-score">
+            <span className="your-score">61</span>
+            <span className="total-score"> / 100</span>
+          </div>
+        </div>
+        <div className="skill-container visual">
+          <span className="top-left-corner-accent corner-accent"></span>
+          <span className="top-right-corner-accent corner-accent"></span>
+          <span className="bottom-left-corner-accent corner-accent"></span>
+          <span className="bottom-right-corner-accent corner-accent"></span>
+          <div className="skill-type">
+            <img
+              src="src\assets\icon-visual.svg"
+              alt="visual icon"
+              className="skill-icon"
+            />
+            <p className="skill-title">Visual</p>
+          </div>
+          <div className="skill-score">
+            <span className="your-score">72</span>
+            <span className="total-score"> / 100</span>
+          </div>
+        </div>
       </div>
     </div>
   );
