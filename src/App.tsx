@@ -4,7 +4,7 @@ import Results from "./components/results";
 function App() {
   return (
     <>
-      <Results></Results>
+      <Results />
     </>
   );
 }
