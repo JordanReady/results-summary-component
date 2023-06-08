@@ -1,18 +1,28 @@
+import React, { useState } from "react";
 import "./results.css";
 
 function Results() {
+  const [circleScore, setCircleScore] = useState(76);
+  const [resultRating, setResultRating] = useState("Great");
+  const [resultPercentage, setResultPercentage] = useState(65);
+  const [reactionScore, setReactionScore] = useState(80);
+  const [memoryScore, setMemoryScore] = useState(92);
+  const [verbalScore, setVerbalScore] = useState(61);
+  const [visualScore, setVisualScore] = useState(72);
+
   return (
     <div className="results-summary-container">
       <div className="result-container">
         <h1 className="result-title">Your Result</h1>
         <div className="circle-score-container">
-          <span className="circle-score">76</span>
+          <span className="circle-score">{circleScore}</span>
           <p className="circle-score-text">of 100</p>
         </div>
         <div className="result-rating-container">
-          <h2 className="result-rating">Great</h2>
+          <h2 className="result-rating">{resultRating}</h2>
           <p className="result-description">
-            You scored higher than 65% of the people who have taken these tests.
+            You scored higher than {resultPercentage}% of the people who have
+            taken these tests.
           </p>
         </div>
       </div>
@@ -32,7 +42,7 @@ function Results() {
             <p className="skill-title">Reaction</p>
           </div>
           <div className="skill-score">
-            <span className="your-score">80</span>
+            <span className="your-score">{reactionScore}</span>
             <span className="total-score"> / 100</span>
           </div>
         </div>
@@ -50,7 +60,7 @@ function Results() {
             <p className="skill-title">Memory</p>
           </div>
           <div className="skill-score">
-            <span className="your-score">92</span>
+            <span className="your-score">{memoryScore}</span>
             <span className="total-score"> / 100</span>
           </div>
         </div>
@@ -68,7 +78,7 @@ function Results() {
             <p className="skill-title">Verbal</p>
           </div>
           <div className="skill-score">
-            <span className="your-score">61</span>
+            <span className="your-score">{verbalScore}</span>
             <span className="total-score"> / 100</span>
           </div>
         </div>
@@ -86,7 +96,7 @@ function Results() {
             <p className="skill-title">Visual</p>
           </div>
           <div className="skill-score">
-            <span className="your-score">72</span>
+            <span className="your-score">{visualScore}</span>
             <span className="total-score"> / 100</span>
           </div>
         </div>
