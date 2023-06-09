@@ -1,0 +1,86 @@
+[
+  {
+    "person": 1,
+    "scores": [
+      {
+        "category": "reaction",
+        "score": 80
+      },
+      {
+        "category": "memory",
+        "score": 92
+      },
+      {
+        "category": "verbal",
+        "score": 61
+      },
+      {
+        "category": "visual",
+        "score": 72
+      }
+    ]
+  },
+  {
+    "person": 2,
+    "scores": [
+      {
+        "category": "reaction",
+        "score": 90
+      },
+      {
+        "category": "memory",
+        "score": 94
+      },
+      {
+        "category": "verbal",
+        "score": 91
+      },
+      {
+        "category": "visual",
+        "score": 92
+      }
+    ]
+  },
+  {
+    "person": 3,
+    "scores": [
+      {
+        "category": "reaction",
+        "score": 65
+      },
+      {
+        "category": "memory",
+        "score": 55
+      },
+      {
+        "category": "verbal",
+        "score": 58
+      },
+      {
+        "category": "visual",
+        "score": 40
+      }
+    ]
+  },
+  {
+    "person": 4,
+    "scores": [
+      {
+        "category": "reaction",
+        "score": 82
+      },
+      {
+        "category": "memory",
+        "score": 78
+      },
+      {
+        "category": "verbal",
+        "score": 76
+      },
+      {
+        "category": "visual",
+        "score": 85
+      }
+    ]
+  }
+]

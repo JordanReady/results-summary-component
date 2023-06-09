@@ -1,14 +1,94 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./results.css";
 
 function Results() {
-  const [circleScore, setCircleScore] = useState(76);
+  const [circleScore, setCircleScore] = useState(0);
   const [resultRating, setResultRating] = useState("Great");
-  const [resultPercentage, setResultPercentage] = useState(65);
-  const [reactionScore, setReactionScore] = useState(80);
-  const [memoryScore, setMemoryScore] = useState(92);
-  const [verbalScore, setVerbalScore] = useState(61);
-  const [visualScore, setVisualScore] = useState(72);
+  const [resultPercentage, setResultPercentage] = useState(0);
+  const [reactionScore, setReactionScore] = useState(0);
+  const [memoryScore, setMemoryScore] = useState(0);
+  const [verbalScore, setVerbalScore] = useState(null);
+  const [visualScore, setVisualScore] = useState(null);
+  const [data, setData] = useState(null);
+  const [person, setPerson] = useState(0);
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  useEffect(() => {
+    if (data) {
+      console.log(data);
+      setReactionScore(data[person].scores[0].score);
+      setMemoryScore(data[person].scores[1].score);
+      setVerbalScore(data[person].scores[2].score);
+      setVisualScore(data[person].scores[3].score);
+      calculateCircleScore();
+    }
+  }, [data, person]);
+
+  const fetchData = async () => {
+    try {
+      const response = await fetch("/data.json");
+      const jsonData = await response.json();
+      setData(jsonData);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  function getNewData() {
+    console.log("get new data");
+    console.log(data[person].scores[0].score);
+
+    if (person < data.length - 1) {
+      setPerson(person + 1);
+    } else {
+      setPerson(0);
+    }
+
+    if (data) {
+      // set the state
+      setReactionScore(data[person].scores[0].score);
+      setMemoryScore(data[person].scores[1].score);
+      setVerbalScore(data[person].scores[2].score);
+      setVisualScore(data[person].scores[3].score);
+      calculateCircleScore();
+    } else {
+      console.log("no data");
+    }
+  }
+
+  function calculateCircleScore() {
+    const scoresLength = data[person].scores.length;
+    let averageScore = 0;
+    let averageScoreRounded = Math.round(averageScore);
+    for (let i = 0; i < scoresLength; i++) {
+      let totalScore = 0;
+      totalScore += data[person].scores[0].score;
+      totalScore += data[person].scores[1].score;
+      totalScore += data[person].scores[2].score;
+      totalScore += data[person].scores[3].score;
+      averageScore = totalScore / scoresLength;
+      averageScoreRounded = Math.round(averageScore);
+    }
+    if (averageScore >= 90) {
+      setResultRating("Fantastic");
+      setResultPercentage(95);
+    } else if (averageScore >= 80) {
+      setResultRating("Excellent");
+      setResultPercentage(83);
+    } else if (averageScore >= 70) {
+      setResultRating("Great");
+      setResultPercentage(65);
+    } else {
+      setResultRating("Poor");
+      setResultPercentage(42);
+    }
+    setCircleScore(averageScoreRounded);
+    console.log(averageScore);
+    console.log(averageScoreRounded);
+  }
 
   return (
     <div className="results-summary-container">
@@ -100,7 +180,14 @@ function Results() {
             <span className="total-score"> / 100</span>
           </div>
         </div>
-        <button className="continue-button">Continue</button>
+        <button
+          className="continue-button"
+          onClick={() => {
+            getNewData();
+          }}
+        >
+          Continue
+        </button>
       </div>
     </div>
   );
