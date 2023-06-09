@@ -18,7 +18,6 @@ function Results() {
 
   useEffect(() => {
     if (data) {
-      console.log(data);
       setReactionScore(data[person].scores[0].score);
       setMemoryScore(data[person].scores[1].score);
       setVerbalScore(data[person].scores[2].score);
@@ -38,9 +37,6 @@ function Results() {
   };
 
   function getNewData() {
-    console.log("get new data");
-    console.log(data[person].scores[0].score);
-
     if (person < data.length - 1) {
       setPerson(person + 1);
     } else {
@@ -86,8 +82,6 @@ function Results() {
       setResultPercentage(42);
     }
     setCircleScore(averageScoreRounded);
-    console.log(averageScore);
-    console.log(averageScoreRounded);
   }
 
   return (
