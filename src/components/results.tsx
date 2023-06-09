@@ -1,15 +1,18 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./results.css";
 
 function Results() {
   const [circleScore, setCircleScore] = useState(0);
   const [resultRating, setResultRating] = useState("Great");
   const [resultPercentage, setResultPercentage] = useState(0);
-  const [reactionScore, setReactionScore] = useState(0);
-  const [memoryScore, setMemoryScore] = useState(0);
-  const [verbalScore, setVerbalScore] = useState(null);
-  const [visualScore, setVisualScore] = useState(null);
-  const [data, setData] = useState(null);
+  const [reactionScore, setReactionScore] = useState<number | null>(null);
+  const [memoryScore, setMemoryScore] = useState<number | null>(null);
+  const [verbalScore, setVerbalScore] = useState<number | null>(null);
+  const [visualScore, setVisualScore] = useState<number | null>(null);
+  const [data, setData] = useState<Array<{ scores: Array<{ score: number }> }>>(
+    []
+  );
+
   const [person, setPerson] = useState(0);
 
   useEffect(() => {
@@ -17,7 +20,7 @@ function Results() {
   }, []);
 
   useEffect(() => {
-    if (data) {
+    if (data && data[person] && data[person].scores) {
       setReactionScore(data[person].scores[0].score);
       setMemoryScore(data[person].scores[1].score);
       setVerbalScore(data[person].scores[2].score);
@@ -56,6 +59,9 @@ function Results() {
   }
 
   function calculateCircleScore() {
+    if (!data) {
+      return;
+    }
     const scoresLength = data[person].scores.length;
     let averageScore = 0;
     let averageScoreRounded = Math.round(averageScore);
@@ -68,6 +74,22 @@ function Results() {
       averageScore = totalScore / scoresLength;
       averageScoreRounded = Math.round(averageScore);
     }
+
+    // calculate animation increment
+    let increment = (averageScoreRounded - circleScore) / 60;
+
+    let count = circleScore;
+    const timer = setInterval(() => {
+      count += increment;
+
+      if (Math.round(count) === averageScoreRounded) {
+        count = averageScoreRounded;
+        clearInterval(timer);
+      }
+
+      setCircleScore(Math.round(count));
+    }, 1000 / 40);
+
     if (averageScore >= 90) {
       setResultRating("Fantastic");
       setResultPercentage(95);
@@ -81,7 +103,6 @@ function Results() {
       setResultRating("Poor");
       setResultPercentage(42);
     }
-    setCircleScore(averageScoreRounded);
   }
 
   return (
