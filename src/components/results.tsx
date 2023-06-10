@@ -130,7 +130,7 @@ function Results() {
           <span className="bottom-right-corner-accent corner-accent"></span>
           <div className="skill-type">
             <img
-              src="src\assets\icon-reaction.svg"
+              src="src/assets/icon-reaction.svg"
               alt="reaction icon"
               className="skill-icon"
             />
@@ -148,7 +148,7 @@ function Results() {
           <span className="bottom-right-corner-accent corner-accent"></span>
           <div className="skill-type">
             <img
-              src="src\assets\icon-memory.svg"
+              src="src/assets/icon-memory.svg"
               alt="memory icon"
               className="skill-icon"
             />
@@ -166,7 +166,7 @@ function Results() {
           <span className="bottom-right-corner-accent corner-accent"></span>
           <div className="skill-type">
             <img
-              src="src\assets\icon-verbal.svg"
+              src="src/assets/icon-verbal.svg"
               alt="verbal icon"
               className="skill-icon"
             />
@@ -184,7 +184,7 @@ function Results() {
           <span className="bottom-right-corner-accent corner-accent"></span>
           <div className="skill-type">
             <img
-              src="src\assets\icon-visual.svg"
+              src="src/assets/icon-visual.svg"
               alt="visual icon"
               className="skill-icon"
             />
