@@ -31,7 +31,7 @@ function Results() {
 
   const fetchData = async () => {
     try {
-      const response = await fetch("/data.json");
+      const response = await fetch("src/components/data.json");
       const jsonData = await response.json();
       setData(jsonData);
     } catch (error) {
