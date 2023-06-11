@@ -134,7 +134,7 @@ function Results() {
           <span className="bottom-right-corner-accent corner-accent"></span>
           <div className="skill-type">
             <img
-              src={ReactionIcon}
+              src={ReactionIcon + "?sanitize=true"}
               alt="reaction icon"
               className="skill-icon"
             />
@@ -151,7 +151,11 @@ function Results() {
           <span className="bottom-left-corner-accent corner-accent"></span>
           <span className="bottom-right-corner-accent corner-accent"></span>
           <div className="skill-type">
-            <img src={MemoryIcon} alt="memory icon" className="skill-icon" />
+            <img
+              src={MemoryIcon + "?sanitize=true"}
+              alt="memory icon"
+              className="skill-icon"
+            />
             <p className="skill-title">Memory</p>
           </div>
           <div className="skill-score">
@@ -165,7 +169,11 @@ function Results() {
           <span className="bottom-left-corner-accent corner-accent"></span>
           <span className="bottom-right-corner-accent corner-accent"></span>
           <div className="skill-type">
-            <img src={VerbalIcon} alt="verbal icon" className="skill-icon" />
+            <img
+              src={VerbalIcon + "?sanitize=true"}
+              alt="verbal icon"
+              className="skill-icon"
+            />
             <p className="skill-title">Verbal</p>
           </div>
           <div className="skill-score">
@@ -179,7 +187,11 @@ function Results() {
           <span className="bottom-left-corner-accent corner-accent"></span>
           <span className="bottom-right-corner-accent corner-accent"></span>
           <div className="skill-type">
-            <img src={VisualIcon} alt="visual icon" className="skill-icon" />
+            <img
+              src={VisualIcon + "?sanitize=true"}
+              alt="visual icon"
+              className="skill-icon"
+            />
             <p className="skill-title">Visual</p>
           </div>
           <div className="skill-score">
