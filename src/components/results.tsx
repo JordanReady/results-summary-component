@@ -131,6 +131,7 @@ function Results() {
           <div className="skill-type">
             <img
               src="src/assets/icon-reaction.svg"
+              type="image/svg+xml"
               alt="reaction icon"
               className="skill-icon"
             />
@@ -149,6 +150,7 @@ function Results() {
           <div className="skill-type">
             <img
               src="src/assets/icon-memory.svg"
+              type="image/svg+xml"
               alt="memory icon"
               className="skill-icon"
             />
@@ -167,6 +169,7 @@ function Results() {
           <div className="skill-type">
             <img
               src="src/assets/icon-verbal.svg"
+              type="image/svg+xml"
               alt="verbal icon"
               className="skill-icon"
             />
@@ -185,6 +188,7 @@ function Results() {
           <div className="skill-type">
             <img
               src="src/assets/icon-visual.svg"
+              type="image/svg+xml"
               alt="visual icon"
               className="skill-icon"
             />
