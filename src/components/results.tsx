@@ -1,5 +1,9 @@
 import { useState, useEffect } from "react";
 import "./results.css";
+import ReactionIcon from "../assets/icon-reaction.svg";
+import MemoryIcon from "../assets/icon-memory.svg";
+import VerbalIcon from "../assets/icon-verbal.svg";
+import VisualIcon from "../assets/icon-visual.svg";
 
 function Results() {
   const [circleScore, setCircleScore] = useState(0);
@@ -130,8 +134,7 @@ function Results() {
           <span className="bottom-right-corner-accent corner-accent"></span>
           <div className="skill-type">
             <img
-              src="src/assets/icon-reaction.svg"
-              type="image/svg+xml"
+              src={ReactionIcon}
               alt="reaction icon"
               className="skill-icon"
             />
@@ -148,12 +151,7 @@ function Results() {
           <span className="bottom-left-corner-accent corner-accent"></span>
           <span className="bottom-right-corner-accent corner-accent"></span>
           <div className="skill-type">
-            <img
-              src="src/assets/icon-memory.svg"
-              type="image/svg+xml"
-              alt="memory icon"
-              className="skill-icon"
-            />
+            <img src={MemoryIcon} alt="memory icon" className="skill-icon" />
             <p className="skill-title">Memory</p>
           </div>
           <div className="skill-score">
@@ -167,12 +165,7 @@ function Results() {
           <span className="bottom-left-corner-accent corner-accent"></span>
           <span className="bottom-right-corner-accent corner-accent"></span>
           <div className="skill-type">
-            <img
-              src="src/assets/icon-verbal.svg"
-              type="image/svg+xml"
-              alt="verbal icon"
-              className="skill-icon"
-            />
+            <img src={VerbalIcon} alt="verbal icon" className="skill-icon" />
             <p className="skill-title">Verbal</p>
           </div>
           <div className="skill-score">
@@ -186,12 +179,7 @@ function Results() {
           <span className="bottom-left-corner-accent corner-accent"></span>
           <span className="bottom-right-corner-accent corner-accent"></span>
           <div className="skill-type">
-            <img
-              src="src/assets/icon-visual.svg"
-              type="image/svg+xml"
-              alt="visual icon"
-              className="skill-icon"
-            />
+            <img src={VisualIcon} alt="visual icon" className="skill-icon" />
             <p className="skill-title">Visual</p>
           </div>
           <div className="skill-score">
