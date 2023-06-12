@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import "./results.css";
-import ReactionIcon from "../assets/icon-reaction.svg";
-import MemoryIcon from "../assets/icon-memory.svg";
-import VerbalIcon from "../assets/icon-verbal.svg";
-import VisualIcon from "../assets/icon-visual.svg";
+import ReactionIcon from "../assets/icon-reaction.png";
+import MemoryIcon from "../assets/icon-memory.png";
+import VerbalIcon from "../assets/icon-verbal.png";
+import VisualIcon from "../assets/icon-visual.png";
 
 function Results() {
   const [circleScore, setCircleScore] = useState(0);
