@@ -9,10 +9,10 @@ function Results() {
   const [circleScore, setCircleScore] = useState(0);
   const [resultRating, setResultRating] = useState("Great");
   const [resultPercentage, setResultPercentage] = useState(0);
-  const [reactionScore, setReactionScore] = useState<number | null>(null);
-  const [memoryScore, setMemoryScore] = useState<number | null>(null);
-  const [verbalScore, setVerbalScore] = useState<number | null>(null);
-  const [visualScore, setVisualScore] = useState<number | null>(null);
+  const [reactionScore, setReactionScore] = useState<number | null>(0);
+  const [memoryScore, setMemoryScore] = useState<number | null>(0);
+  const [verbalScore, setVerbalScore] = useState<number | null>(0);
+  const [visualScore, setVisualScore] = useState<number | null>(0);
   const [data, setData] = useState<Array<{ scores: Array<{ score: number }> }>>(
     []
   );
