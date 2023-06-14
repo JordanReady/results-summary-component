@@ -112,7 +112,7 @@ function Results() {
   return (
     <div className="results-summary-container">
       <div className="result-container">
-        <h1 className="result-title">Testing Workflow</h1>
+        <h1 className="result-title">Your Results</h1>
         <div className="circle-score-container">
           <span className="circle-score">{circleScore}</span>
           <p className="circle-score-text">of 100</p>
